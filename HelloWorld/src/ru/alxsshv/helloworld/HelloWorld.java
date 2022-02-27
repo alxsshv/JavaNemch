@@ -3,13 +3,19 @@ package ru.alxsshv.helloworld;
 public class HelloWorld {
 
 	public static void main(String[] args) {
-		int i = 6;
-		int j = 7;
-		int answer;
-		answer = i * j;
+		int i = 7;
+		int j = 6;
+		float answer;
+		boolean isMoreThenOne;
+		answer = (float) i / (float) j;
 		String message1 = "Hello";
 		String message2 = " world";
-		System.out.println(i);
+		if (answer > 1) {
+			isMoreThenOne = true;
+		} else {
+			isMoreThenOne = false;
+		}
+		System.out.println(isMoreThenOne);
 		System.out.println(message1 + message2);
 		System.out.println(answer);
 	}
