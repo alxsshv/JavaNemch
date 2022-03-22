@@ -16,6 +16,7 @@ public class CarManager {
 		System.out.println(prius);
 		
 		System.out.println(renault.equals(renault2));
+	
 		}
 	
 

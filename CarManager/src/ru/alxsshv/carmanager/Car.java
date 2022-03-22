@@ -20,7 +20,15 @@ public class Car {
 	}
 	
 	public void addDistance (int additionalDistance) {
-		distance += additionalDistance;
+		
+		if (additionalDistance > 0) {
+			
+			distance += additionalDistance;	
+		
+		} else {
+			throw new SecurityException ("Отрицательный пробег!");
+		}
+		
 	}
 	
 	public int getDistance() {
